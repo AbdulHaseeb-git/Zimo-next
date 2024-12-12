@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+:root {
+  --primary-color-light: #16a34a; /* Green */
+  --primary-color-dark: #10b981; /* Dark Green */
+  --background-light: #f9fafb; /* Light background */
+  --background-dark: #111827; /* Dark background */
+  --text-light: #111827; /* Dark text */
+  --text-dark: #f9fafb; /* Light text */
+  --link-hover-light: #fbbf24; /* Yellow for light theme */
+  --link-hover-dark: #fbbf24; /* Yellow for dark theme */
+}
+
+[data-theme='light'] {
+  --primary-color: var(--primary-color-light);
+  --background: var(--background-light);
+  --text-color: var(--text-light);
+  --link-hover: var(--link-hover-light);
+}
+
+[data-theme='dark'] {
+  --primary-color: var(--primary-color-dark);
+  --background: var(--background-dark);
+  --text-color: var(--text-dark);
+  --link-hover: var(--link-hover-dark);
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+button {
+  background-color: var(--primary-btn-bg);
+}
+
+button:hover {
+  background-color: var(--hover-btn-bg);
+}
